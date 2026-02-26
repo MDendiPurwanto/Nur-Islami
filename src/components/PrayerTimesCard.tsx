@@ -37,10 +37,10 @@ export const PrayerTimesCard: React.FC<Props> = ({ times, cityName }) => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: index * 0.05 }}
-            className="bg-white dark:bg-stone-800 p-4 rounded-2xl border border-stone-100 dark:border-stone-700 shadow-sm hover:shadow-md transition-shadow flex flex-col items-center text-center"
+            className="bg-white dark:bg-stone-900 p-4 rounded-2xl border border-stone-200 dark:border-stone-800 shadow-sm hover:shadow-md transition-shadow flex flex-col items-center text-center"
           >
             <item.icon className={`w-6 h-6 mb-2 ${item.color}`} />
-            <span className="text-xs font-semibold uppercase tracking-wider text-stone-400 dark:text-stone-500 mb-1">
+            <span className="text-xs font-semibold uppercase tracking-wider text-stone-500 dark:text-stone-400 mb-1">
               {item.name}
             </span>
             <span className="text-xl font-bold text-stone-800 dark:text-stone-100">

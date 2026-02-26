@@ -78,7 +78,7 @@ export default function App() {
           <div className="hidden md:flex items-center gap-4">
             <button
               onClick={() => setDarkMode(!darkMode)}
-              className="p-2 rounded-xl bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300 hover:bg-stone-200 dark:hover:bg-stone-700 transition-colors"
+              className="p-2 rounded-xl bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300 hover:bg-stone-200 dark:hover:bg-stone-700 transition-colors shadow-inner dark:shadow-none"
               aria-label="Toggle Dark Mode"
             >
               {darkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
@@ -132,7 +132,7 @@ export default function App() {
                 <div className="lg:col-span-2 space-y-8">
                   <RamadanCountdown />
                   
-                  <div className="bg-white dark:bg-stone-900 p-8 rounded-3xl border border-stone-100 dark:border-stone-800 shadow-sm">
+                  <div className="bg-white dark:bg-stone-900 p-8 rounded-3xl border border-stone-200 dark:border-stone-800 shadow-sm">
                     {loading ? (
                       <div className="flex flex-col items-center justify-center py-12">
                         <Loader2 className="w-8 h-8 text-emerald-600 animate-spin mb-4" />
@@ -149,7 +149,7 @@ export default function App() {
                 </div>
 
                 <div className="space-y-6">
-                  <div className="bg-white dark:bg-stone-900 p-6 rounded-3xl border border-stone-100 dark:border-stone-800 shadow-sm">
+                  <div className="bg-white dark:bg-stone-900 p-6 rounded-3xl border border-stone-200 dark:border-stone-800 shadow-sm">
                     <h3 className="font-bold text-stone-800 dark:text-stone-100 mb-4 flex items-center gap-2">
                       <Info className="w-4 h-4 text-emerald-600" /> Mutiara Hikmah
                     </h3>
@@ -168,7 +168,7 @@ export default function App() {
                     </div>
                   </div>
 
-                  <div className="bg-emerald-50 dark:bg-emerald-950/30 p-6 rounded-3xl border border-emerald-100 dark:border-emerald-900/50">
+                  <div className="bg-emerald-50 dark:bg-emerald-950/30 p-6 rounded-3xl border border-emerald-200 dark:border-emerald-800/60 shadow-inner dark:shadow-none">
                     <h3 className="font-bold text-emerald-900 dark:text-emerald-100 mb-2">Al-Quran Digital</h3>
                     <p className="text-emerald-700 dark:text-emerald-400 text-sm mb-4">Baca dan pelajari Al-Quran kapan saja, di mana saja.</p>
                     <button 
@@ -262,7 +262,7 @@ export default function App() {
           </button>
           <button 
             onClick={() => setActiveTab('compass')}
-            className={`flex flex-col items-center gap-1 transition-colors ${activeTab === 'compass' ? 'text-emerald-600' : 'text-stone-400 dark:text-stone-500'}`}
+            className={`flex flex-col items-center gap-1 transition-colors ${activeTab === 'compass' ? 'text-emerald-600' : 'text-stone-500 dark:text-stone-400'}`}
           >
             <Navigation className="w-6 h-6" />
             <span className="text-[10px] font-bold uppercase">Kiblat</span>
