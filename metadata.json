@@ -1,0 +1,5 @@
+{
+  "name": "Nur Islami",
+  "description": "Aplikasi ibadah harian lengkap dengan jadwal sholat, Al-Quran digital, arah kiblat, dan tahlil.",
+  "requestFramePermissions": ["geolocation"]
+}
